@@ -1,0 +1,7 @@
+.beers {
+    color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 1rem;
+    border: 1px black dashed;
+}
