@@ -1,8 +1,10 @@
 import React, { useState, createContext, useContext } from 'react';
+import Beers from '../beers'
 import * as styles from './filters.module.css';
 
 const Filters = () => {
     const [ABVfilter, setABVFilter] = useState("");
+    // taking this out an up the tree to pass it down via context?
 
     let optionsABV = "";
 
@@ -27,12 +29,15 @@ const Filters = () => {
         }
         
         setABVFilter(optionsABV);
-        console.log(`filter = ${ABVfilter}`);
+        // console.log(`filter = ${ABVfilter}`);
     }
 
     const FilterContext = React.createContext(ABVfilter);
 
     return (
+        <div>
+
+        
         <div className={styles.container}>
             <p>filters go here</p>
             
@@ -146,7 +151,12 @@ const Filters = () => {
 
 
         </div>
+
+        <Beers filters={ABVfilter} />
+
+        </div>
     )
 }
 
 export default Filters;
+

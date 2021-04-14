@@ -1,15 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import Beer from '../beer';
+// import Filters from '../filters';
 import * as styles from "./beers.module.css";
+// import {FilterContext} from '../filters';
  
  
  const urlBase = "https://api.punkapi.com/v2/beers";
 
-const Beers = () => {
+const Beers = (props) => {
     const [beers, setBeers] = useState(['piwko', 'paliwko']);
 
     async function getBeers() {
-        const response = await fetch(urlBase);
+        const url = urlBase + "?" + props.filters;
+        console.log(url)
+        const response = await fetch(url);
         const data = await response.json();
     
         const beerArr = data.map(beer => {
@@ -34,7 +38,7 @@ const Beers = () => {
 
     useEffect(() => {
         getBeers()
-    }, []);
+    }, [props.filters]);
 
     return (
         <div className={styles.beers}>
