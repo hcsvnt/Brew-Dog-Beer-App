@@ -21,17 +21,3 @@ const Beer = (props) => {
 }
 
 export default Beer;
-
-
-
-{/* <Beer 
-key={id} 
-name={name} 
-tagline={tagline}
-abv={abv} 
-ibu={ibu} 
-description={description} 
-food_pairing={food_pairing}
-first_brewed={first_brewed}
-image_url={image_url}
-/>; */}

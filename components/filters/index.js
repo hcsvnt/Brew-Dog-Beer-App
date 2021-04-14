@@ -1,49 +1,16 @@
-import React, { useState, createContext, useContext } from 'react';
-import Beers from '../beers'
 import * as styles from './filters.module.css';
 
-const Filters = () => {
-    const [ABVfilter, setABVFilter] = useState("");
-    // taking this out an up the tree to pass it down via context?
-
-    let optionsABV = "";
-
-    function filterABV(e) {
-        const value = e.target.value;
-        console.log(value)
-        
-        
-        switch (value) {
-            case "all":
-                optionsABV = "";
-                break;
-            case "weak":
-                optionsABV = "abv_lt=4.6";
-                break;
-            case "medium":
-                optionsABV = "abv_gt=4.5&abv_lt=7.6";
-                break;
-            case "strong":
-                optionsABV = "abv_gt=7.5";
-                break;
-        }
-        
-        setABVFilter(optionsABV);
-        // console.log(`filter = ${ABVfilter}`);
-    }
-
-    const FilterContext = React.createContext(ABVfilter);
-
+const Filters = (props) => {
+    
     return (
         <div>
 
-        
         <div className={styles.container}>
             <p>filters go here</p>
             
             <div className={styles.filter}>
                 <p>ABV</p>
-                <form id="filterABV" className={styles.filter__form} onChange={filterABV}>
+                <form id="filterABV" className={styles.filter__form} onChange={props.setABV}>
                     <label>
                     <input
                         type="radio"
@@ -89,7 +56,7 @@ const Filters = () => {
             </div>
             <div className={styles.filter}>
                 <p>IBU</p>
-                <form id="filterIBU" className={styles.filter__form}>
+                <form id="filterIBU" className={styles.filter__form} onChange={props.setIBU}>
                     <label>
                     <input
                         type="radio"
@@ -147,12 +114,9 @@ const Filters = () => {
               </button>
             </div>
 
-            
-
+        
 
         </div>
-
-        <Beers filters={ABVfilter} />
 
         </div>
     )
