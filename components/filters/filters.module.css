@@ -1,6 +1,13 @@
 .container {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter { 
+    border: 1px black dashed;
 }
 
 .filter__form {
