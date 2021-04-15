@@ -1,7 +1,28 @@
 import * as styles from './filters.module.css';
 
 const Filters = (props) => {
-    
+
+    const {page, beers} = props;
+
+    let prevDisabled = false;
+    let nextDisabled = false;
+
+    function isDisabled() {
+        if(page === 1) {
+        prevDisabled = true;
+        } else {
+        prevDisabled= false;
+        }
+
+        if(beers.length < 25) {
+        nextDisabled = true;
+        } else {
+        nextDisabled = false;
+        }
+    }
+
+    isDisabled()
+
     return (
         <div>
 
@@ -101,20 +122,20 @@ const Filters = (props) => {
                 </form>
             </div>
             <div className={styles.filter__text}>
-              <p>Page: <span id="pageNumber"></span></p>
+              <p>Page: <span id="pageNumber">{page}</span></p>
             </div>
             <div className={styles.filter}>
-              <button id="prevPage" className={styles.page__btn} disabled>
+              <button id="prevPage" className={styles.page__btn} onClick={props.prevPage} 
+              disabled={prevDisabled}
+              >
                 {/* <i class="far fa-caret-square-left"></i> */}
-                <span>left</span>
+                <span>prev</span>
               </button>
-              <button id="nextPage" className={styles.page__btn}>
+              <button id="nextPage" className={styles.page__btn} onClick={props.nextPage} disabled={nextDisabled}>
                 {/* <i class="far fa-caret-square-right"></i> */}
-                <span>right</span>
+                <span>next</span>
               </button>
             </div>
-
-        
 
         </div>
 
@@ -123,4 +144,5 @@ const Filters = (props) => {
 }
 
 export default Filters;
+
 
