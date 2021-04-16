@@ -9,11 +9,13 @@ const Beer = (props) => {
             <p className={styles.abv}>ABV: {abv}</p>
             <p className={styles.ibu}>IBU: {ibu}</p>
             <div className={styles.reverse}>
-                <h3>{name}</h3>
+                {/* <h3>{name}</h3> */}
                 <h6>{tagline}</h6>
-                <p>{description}</p>
-                <p>{food_pairing}</p>
-                <p>{first_brewed}</p>
+                <div className={styles.description}>
+                    <p >{description}</p>
+                    <p><span>pair with: </span>{food_pairing.join(', ')}</p>
+                    <p><span>first brewed: </span>{first_brewed}</p>
+                </div>
             </div>
             <img src={image_url} />
         </div>

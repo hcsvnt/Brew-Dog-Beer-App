@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&family=Space+Grotesk:wght@600&display=swap');
+@import url("https://use.typekit.net/mct7lzi.css");
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,9 +10,104 @@
 
 :root {
     --pink: pink;
-    
+    --ff-main: 'Roboto', sans-serif;
+    --ff-second: 'Space Grotesk', sans-serif;
+    --fw-main: 300;
+    --fw-second: 600;
+}
+
+body {
+    font-family: var(--ff-main);
+    font-weight: var(--fw-main);
+    font-size: 16px;
+    background: #f0f0f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-second);
+    font-weight: var(--fw-main);
+    font-size: 16px;
+}
+
+h1 {
+    font-family: neon-stream, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+h6 {
+    font-family: var(--ff-main);
+    font-weight: 300;
+    font-style: italic;
 }
 
 svg {
-    width: 50px;
+    width: 3rem;
+    height: 3rem;
+    fill:#1b1b1b;
 }
+
+
+input {
+    opacity: 0;
+    position: absolute;
+}
+
+input + span,
+input + svg {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.beer {
+    /* fill: pink; */
+}
+
+.beer:hover,
+.beer:checked + svg,
+.beer:focus + svg {
+    /* fill: var(--orange); */
+    fill: orange;
+}
+
+
+.hops:hover,
+.hops:checked + svg,
+.hops:focus + svg {
+    /* fill: var(--green); */
+    fill: green;
+}
+
+
+label {
+    margin: 10px;
+}
+
+button {
+    transition: 300ms ease;
+}
+
+button:hover {
+    /* color: #fff; */
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.3),
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 15px rgba(255, 255, 255, 0.5),
+        0 0 25px hsl(300, 76%, 80%),
+        0 0 50px hsl(300, 76%, 70%);
+    
+}
+
+
+
+/* Main font Roboto thin, Roboto light italic
+font-family: 'Roboto', sans-serif;
+Secondary font Space G medium
+font-family: 'Space Grotesk', sans-serif;  
+
+NeonStream Regular
+
+font-family: neon-stream, sans-serif;
+font-weight: 400;
+font-style: normal;*/

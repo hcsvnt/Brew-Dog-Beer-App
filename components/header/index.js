@@ -1,8 +1,10 @@
+import * as styles from "./header.module.css"
 
 const Header = () => {
     return (
-
-        <h1>Punk API Beer App</h1>
+        <div className={styles.header}>
+            <h1>BrewDog Beer App</h1>
+        </div>
      
     )
 }

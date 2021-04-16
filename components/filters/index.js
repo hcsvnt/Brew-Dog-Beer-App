@@ -1,4 +1,3 @@
-// import SVG from '../svg';
 import { WeakABVSVG,
         MediumABVSVG,
         StrongABVSVG,
@@ -34,7 +33,7 @@ const Filters = (props) => {
         <div>
             <div className={styles.container}>
                 <div className={styles.filter}>
-                    <p>ABV</p>
+                    <p className={styles.filter__label} >ABV</p>
                     <form id="filterABV" className={styles.filter__form} onChange={props.setABV}>
                         <label>
                         <input
@@ -45,7 +44,7 @@ const Filters = (props) => {
                             value="all"
                             // checked
                         />
-                        <span className={styles.filter__all}>All</span>
+                        <span className={styles.filter__all}>all</span>
                         </label>
                         <label>
                         <input
@@ -80,7 +79,7 @@ const Filters = (props) => {
                     </form>
                 </div>
                 <div className={styles.filter}>
-                    <p>IBU</p>
+                    <p className={styles.filter__label}>IBU</p>
                     <form id="filterIBU" className={styles.filter__form} onChange={props.setIBU}>
                         <label>
                         <input
@@ -91,7 +90,7 @@ const Filters = (props) => {
                             value="all"
                             // checked
                         />
-                        <span className={styles.filter__all}>All</span>
+                        <span className={styles.filter__all}>all</span>
                         </label>
                         <label>
                         <input
@@ -125,22 +124,24 @@ const Filters = (props) => {
                         </label>
                     </form>
                 </div>
-                <div className={styles.filter__text}>
-                <p>Page: <span id="pageNumber">{page}</span></p>
-                </div>
-                <div className={styles.filter}>
-                <button id="prevPage" className={styles.page__btn} onClick={props.prevPage} 
-                disabled={prevDisabled}
-                >
-                    {/* <i class="far fa-caret-square-left"></i> */}
-                    <span>prev</span>
-                </button>
-                <button id="nextPage" className={styles.page__btn} onClick={props.nextPage} disabled={nextDisabled}>
-                    {/* <i class="far fa-caret-square-right"></i> */}
-                    <span>next</span>
-                </button>
-                </div>
+                <div className={styles.filter__pages}>
+                    <div className={styles.filter__text}>
+                    <p>Page: <span id="pageNumber">{page}</span></p>
+                    </div>
+                    <div >
+                    <button id="prevPage" className={styles.page__btn} onClick={props.prevPage} 
+                    disabled={prevDisabled}
+                    >
+                        {/* <i class="far fa-caret-square-left"></i> */}
+                        <span>prev</span>
+                    </button>
+                    <button id="nextPage" className={styles.page__btn} onClick={props.nextPage} disabled={nextDisabled}>
+                        {/* <i class="far fa-caret-square-right"></i> */}
+                        <span>next</span>
+                    </button>
+                    </div>
 
+                </div>
             </div>
         </div>
     )
