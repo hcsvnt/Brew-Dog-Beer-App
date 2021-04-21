@@ -57,6 +57,10 @@
 
 .description {
     height: 70%;
+    overflow: hidden;
+}
+
+.scroll {
     overflow: auto;
 }
 

@@ -18,7 +18,7 @@ const Beer = (props) => {
             <p className={styles.ibu}>IBU: {ibu}</p>
             <div className={`${styles.reverse} ${active ? styles.active : null } `} onClick={showReverse}>
                 <h6>{tagline}</h6>
-                <div className={styles.description}>
+                <div className={`${styles.description} ${active ? styles.scroll : null }`}>
                     <p >{description}</p>
                     <p><span>pair with: </span>{food_pairing.join(', ')}</p>
                     <p><span>first brewed: </span>{first_brewed}</p>
