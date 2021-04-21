@@ -48,6 +48,24 @@ svg {
     fill:#1b1b1b;
 }
 
+.beerSVG:checked {
+    fill: red;
+}
+
+
+@media screen and (max-width: 400px) {
+    svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+}
+
+.a {
+    fill: white;
+}
+
 
 input {
     opacity: 0;
@@ -60,21 +78,18 @@ input + svg {
     transition: all .3s ease;
 }
 
-.beer {
-    /* fill: pink; */
-}
 
-.beer:hover,
-.beer:checked + svg,
-.beer:focus + svg {
+.radioABV:hover,
+.radioABV:checked + svg,
+.radioABV:focus + svg {
     /* fill: var(--orange); */
     fill: orange;
 }
 
 
-.hops:hover,
-.hops:checked + svg,
-.hops:focus + svg {
+.radioIBU:hover,
+.radioIBU:checked + svg,
+.radioIBU:focus + svg {
     /* fill: var(--green); */
     fill: green;
 }

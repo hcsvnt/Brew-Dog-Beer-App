@@ -94,6 +94,7 @@ const Beers = () => {
 
     function setABV(e) {
         switchABV(e)
+        console.log(e.target.value)
     }
 
     function setIBU(e) {

@@ -42,7 +42,7 @@ const Filters = (props) => {
                             className={styles.filter__all}
                             id="abvAll"
                             value="all"
-                            // checked
+                            defaultChecked
                         />
                         <span className={styles.filter__all}>all</span>
                         </label>
@@ -50,17 +50,17 @@ const Filters = (props) => {
                         <input
                             type="radio"
                             name="filter-abv"
-                            // class="beer"
+                            className="radioABV"
                             id="abvWeak"
                             value="weak"
                         />
-                        <WeakABVSVG />
+                        <WeakABVSVG/>
                         </label>
                         <label>
                         <input
                             type="radio"
                             name="filter-abv"
-                            // class="beer"
+                            className="radioABV"
                             id="abvMedium"
                             value="medium"
                         />
@@ -70,7 +70,7 @@ const Filters = (props) => {
                         <input
                             type="radio"
                             name="filter-abv"
-                            // class="beer"
+                            className="radioABV"
                             id="abvStrong"
                             value="strong"
                         />
@@ -88,15 +88,14 @@ const Filters = (props) => {
                             className={styles.filter__all}
                             id="ibuAll"
                             value="all"
-                            // checked
-                        />
+                            defaultChecked                        />
                         <span className={styles.filter__all}>all</span>
                         </label>
                         <label>
                         <input
                             type="radio"
                             name="filter-ibu"
-                            // class="beer"
+                            className="radioIBU"
                             id="ibuWeak"
                             value="weak"
                         />
@@ -106,7 +105,7 @@ const Filters = (props) => {
                         <input
                             type="radio"
                             name="filter-ibu"
-                            // class="beer"
+                            className="radioIBU"
                             id="ibuMedium"
                             value="medium"
                         />
@@ -116,7 +115,7 @@ const Filters = (props) => {
                         <input
                             type="radio"
                             name="filter-ibu"
-                            // class="beer"
+                            className="radioIBU"
                             id="ibuStrong"
                             value="strong"
                         />

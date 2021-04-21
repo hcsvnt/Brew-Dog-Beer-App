@@ -7,7 +7,7 @@ const WeakABVSVG = () => {
               height="250"
               viewBox="0 0 250 250"
               fill="white"
-              className="beer"
+              className="beerSVG"
             >
           
               <g clipPath="url(#clip0)">
@@ -59,7 +59,7 @@ const MediumABVSVG = () => {
               height="250"
               viewBox="0 0 250 250"
               fill="white"
-              className="beer"
+              className="beerSVG"
             >
 
               <g clipPath="url(#clip0)">
@@ -111,7 +111,7 @@ const StrongABVSVG = () => {
               height="250"
               viewBox="0 0 250 250"
               fill="white"
-              className="beer"
+              className="beerSVG"
             >
               
               <g clipPath="url(#clip0)">

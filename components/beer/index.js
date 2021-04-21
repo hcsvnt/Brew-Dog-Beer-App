@@ -1,14 +1,20 @@
+import { useState } from 'react';
 import * as styles from './beer.module.css';
 
 const Beer = (props) => {
     const {id, name, abv, ibu, description, tagline, food_pairing, first_brewed, image_url} = props;
+    const [active, setActive] = useState(false);
+
+    function showReverse() {
+        setActive(!active);
+    }
     return (
-        <div className={styles.beer}>
+        <div className={`${styles.beer} ${active ? styles.shadow : null }`} >
             <h4>{name}</h4>
             <h6>{tagline}</h6>
             <p className={styles.abv}>ABV: {abv}</p>
             <p className={styles.ibu}>IBU: {ibu}</p>
-            <div className={styles.reverse}>
+            <div className={`${styles.reverse} ${active ? styles.active : null } `} onClick={showReverse}>
                 {/* <h3>{name}</h3> */}
                 <h6>{tagline}</h6>
                 <div className={styles.description}>
