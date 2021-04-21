@@ -9,6 +9,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Brew Dog Beer App</title>
+        <meta name="description" content="The ultimate web app to help you pick the right Brew Dog bottle!"></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Layout>

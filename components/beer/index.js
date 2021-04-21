@@ -13,7 +13,7 @@ const Beer = (props) => {
     return (
         <div className={`${styles.beerCard} ${active ? styles.shadow : null }`} >
             <h4>{name}</h4>
-            <h6>{tagline}</h6>
+            <h5>{tagline}</h5>
             <p className={styles.abv}>ABV: {abv}</p>
             <p className={styles.ibu}>IBU: {ibu}</p>
             <div className={`${styles.reverse} ${active ? styles.active : null } `} onClick={showReverse}>

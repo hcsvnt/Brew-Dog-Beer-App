@@ -35,7 +35,7 @@ h1 {
     font-size: 3rem;
 }
 
-h6 {
+h5, h6 {
     font-family: var(--ff-main);
     font-weight: 300;
     font-style: italic;

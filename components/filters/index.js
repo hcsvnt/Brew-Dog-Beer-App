@@ -41,7 +41,7 @@ const Filters = (props) => {
                             className="radioABV"
                             id="abvAll"
                             value="all"
-                            label="all ABV"
+                            aria-label="all ABV"
                             defaultChecked
                         />
                         <span className="filter__all">all</span>
@@ -53,7 +53,7 @@ const Filters = (props) => {
                             className="radioABV"
                             id="abvWeak"
                             value="weak"
-                            label="weak ABV"
+                            aria-label="weak ABV"
                         />
                         <WeakABVSVG/>
                     </label>
@@ -64,7 +64,7 @@ const Filters = (props) => {
                             className="radioABV"
                             id="abvMedium"
                             value="medium"
-                            label="medium ABV"
+                            aria-label="medium ABV"
                         />
                         <MediumABVSVG />
                     </label>
@@ -75,7 +75,7 @@ const Filters = (props) => {
                             className="radioABV"
                             id="abvStrong"
                             value="strong"
-                            label="strong ABV"
+                            aria-label="strong ABV"
                         />
                         <StrongABVSVG />
                     </label>
@@ -91,6 +91,7 @@ const Filters = (props) => {
                             className="radioIBU"
                             id="ibuAll"
                             value="all"
+                            aria-label="all IBU"
                             defaultChecked                        
                         />
                         <span className="IBU__all">all</span>
@@ -102,6 +103,7 @@ const Filters = (props) => {
                             className="radioIBU"
                             id="ibuWeak"
                             value="weak"
+                            aria-label="weak IBU"
                         />
                         <WeakIBUSVG />
                     </label>
@@ -112,6 +114,7 @@ const Filters = (props) => {
                         className="radioIBU"
                         id="ibuMedium"
                         value="medium"
+                        aria-label="medium IBU"
                     />
                     <MediumIBUSVG />
                     </label>
@@ -122,6 +125,7 @@ const Filters = (props) => {
                             className="radioIBU"
                             id="ibuStrong"
                             value="strong"
+                            aria-label="strong IBU"
                         />
                         <StrongIBUSVG />
                     </label>
