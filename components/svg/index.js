@@ -3,8 +3,8 @@ const WeakABVSVG = () => {
   return (
           <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="250"
-              height="250"
+              width="48px"
+              height="48px"
               viewBox="0 0 250 250"
               fill="white"
               className="beerSVG"
@@ -55,8 +55,8 @@ const MediumABVSVG = () => {
   return (
           <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="250"
-              height="250"
+              width="48px"
+              height="48px"
               viewBox="0 0 250 250"
               fill="white"
               className="beerSVG"
@@ -107,8 +107,8 @@ const StrongABVSVG = () => {
   return (
           <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="250"
-              height="250"
+              width="48px"
+              height="48px"
               viewBox="0 0 250 250"
               fill="white"
               className="beerSVG"
@@ -171,8 +171,8 @@ const WeakIBUSVG = () => {
   return (
           <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="222"
-              height="240"
+              width="48px"
+              height="48px"
               viewBox="0 0 222 240"
               fill="white"
               className="hops"
@@ -189,8 +189,8 @@ const MediumIBUSVG = () => {
   return (
           <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="231"
-              height="240"
+              width="48px"
+              height="48px"
               viewBox="0 0 231 240"
               fill="white"
               className="hops"
@@ -207,8 +207,8 @@ const StrongIBUSVG = () => {
   return (
           <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="230"
-              height="241"
+              width="48px"
+              height="48px"
               viewBox="0 0 230 241"
               fill="white"
               className="hops"

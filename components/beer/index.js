@@ -5,6 +5,8 @@ const Beer = (props) => {
     const {id, name, abv, ibu, description, tagline, food_pairing, first_brewed, image_url} = props;
     const [active, setActive] = useState(false);
 
+    const genericBottle = 'https://cdn.pixabay.com/photo/2014/12/22/00/04/bottle-576717_960_720.png'
+
     function showReverse() {
         setActive(!active);
     }
@@ -22,7 +24,7 @@ const Beer = (props) => {
                     <p><span>first brewed: </span>{first_brewed}</p>
                 </div>
             </div>
-            <img src={image_url} width="200px" height="300px"/>
+            <img src={image_url ?  image_url : genericBottle} width="200px" height="300px"/>
         </div>
     )
 }
