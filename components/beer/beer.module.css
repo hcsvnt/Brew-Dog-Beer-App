@@ -1,4 +1,4 @@
-.beer {
+.beerCard {
     max-width: 400px;
     height: 500px;
 
@@ -14,26 +14,16 @@
     background: #f0f0f0;
     box-shadow:  8px 8px 16px #d8d8d8,
              -8px -8px 16px #ffffff;
+
 }
 
+
 @media screen and (max-width: 710px) {
-    .beer {
+    .beerCard {
         
         width: 100%;
     }
 }
-
-/* @media screen and (max-width: 450px) {
-    .beer {
-        width: 380px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .beer {
-        width: 300px;
-    }
-} */
 
 .reverse {
     position: absolute;
@@ -58,9 +48,10 @@
 
 .active {
     opacity: 0.9;
-    box-shadow: inset 8px 8px 16px #d8d8d8,
-                inset -8px -8px 16px #ffffff;
+    box-shadow: inset 8px 8px 16px rgba(238, 130, 238, 0.30),
+                inset -8px -8px 16px rgba(238, 130, 238, 0.30);
 }
+
 
 .shadow {
     box-shadow: none;
@@ -89,7 +80,7 @@
     line-height: 1.4rem;
 }
 
-.beer img {
+.beerCard img {
     order: -1;
     height: 300px;
     margin-bottom: 1rem;
@@ -98,7 +89,7 @@
 
 }
 
-.beer h4 {
+.beerCard h4 {
     font-size: 1.5rem;
     text-align: center;
     position: relative;
@@ -109,7 +100,7 @@
     
 }
 
-.beer h4::after {
+.beerCard h4::after {
     content: '';
     background-color: black;
     width: 100%;
@@ -120,7 +111,7 @@
     z-index: 0;
 }
 
-.beer h6 {
+.beerCard h6 {
     font-size: 1rem;
 }
 

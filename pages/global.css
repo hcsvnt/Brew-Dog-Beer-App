@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&family=Space+Grotesk:wght@600&display=swap');
 @import url("https://use.typekit.net/mct7lzi.css");
 
-
-* {
+*, *::after, *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -46,12 +45,8 @@ svg {
     width: 3rem;
     height: 3rem;
     fill:#1b1b1b;
+    fill: white;
 }
-
-.beerSVG:checked {
-    fill: red;
-}
-
 
 @media screen and (max-width: 400px) {
     svg {
@@ -62,9 +57,9 @@ svg {
 
 }
 
-.a {
+/* .a {
     fill: white;
-}
+} */
 
 
 input {
@@ -76,6 +71,22 @@ input + span,
 input + svg {
     cursor: pointer;
     transition: all .3s ease;
+}
+
+.IBU__all {
+    color: white;
+}
+
+.filter__all {
+    color: white;
+}
+
+.radioABV:checked + .filter__all {
+    color: orange;
+}
+
+.radioIBU:checked + .IBU__all {
+    color: green;
 }
 
 
@@ -99,19 +110,17 @@ label {
     margin: 10px;
 }
 
-button {
+/* button {
     transition: 300ms ease;
-}
+} */
 
 button:hover {
-    /* color: #fff; */
     text-shadow:
         0 0 5px rgba(255, 255, 255, 0.3),
         0 0 10px rgba(255, 255, 255, 0.4),
         0 0 15px rgba(255, 255, 255, 0.5),
         0 0 25px hsl(300, 76%, 80%),
         0 0 50px hsl(300, 76%, 70%);
-    
 }
 
 

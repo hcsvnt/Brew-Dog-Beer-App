@@ -9,13 +9,12 @@ const Beer = (props) => {
         setActive(!active);
     }
     return (
-        <div className={`${styles.beer} ${active ? styles.shadow : null }`} >
+        <div className={`${styles.beerCard} ${active ? styles.shadow : null }`} >
             <h4>{name}</h4>
             <h6>{tagline}</h6>
             <p className={styles.abv}>ABV: {abv}</p>
             <p className={styles.ibu}>IBU: {ibu}</p>
             <div className={`${styles.reverse} ${active ? styles.active : null } `} onClick={showReverse}>
-                {/* <h3>{name}</h3> */}
                 <h6>{tagline}</h6>
                 <div className={styles.description}>
                     <p >{description}</p>

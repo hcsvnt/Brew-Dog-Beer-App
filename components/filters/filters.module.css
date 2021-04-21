@@ -1,16 +1,12 @@
 .container {
     width: 100%;
-    /* height: 200px; */
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .filter { 
-    background-color: lightgray;
     width: 350px;
-    /* width: fit-content; */
     display: flex;
     font-size: 2rem;
     justify-content: center;
@@ -18,12 +14,11 @@
     border-radius: 15px;
     margin: 20px; 
     margin-top: 0;
-    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15); */
     border-radius: 16px;
     background: #f0f0f0;
+    background-color: #dadada;
     box-shadow:  8px 8px 8px #d8d8d8,
                 -8px -8px 8px #ffffff;
-
 }
 
 .filter__label {
@@ -33,40 +28,32 @@
 }
 
 .filter__form {
-    height: 75px;
-}
-
-.filter__form {
-    /* background-color: orange; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
 }
 
-.filter__all {
-    font-size: 2rem;
-}
-
-
 .filter__pages {
     width: fit-content;
    
     display: flex;
     align-items: center;
-
-    
 }
 
+.filter__all {
+    color: white;
+}
+
+
 .filter__text {
-    font-size: 2rem;
-    width: 150px;
+    width: fit-content;
+    margin: 0.5rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .page__btn {
-    /* width: 50px;
-    height: 50px; */
     outline: none;
     background-color: lightgray;
     border: none;
@@ -74,7 +61,6 @@
     margin: 10px;
     padding: 1rem;
     font-size: 1rem;
-    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15); */
     font-family: var(--ff-second);
     font-size: 1.5rem;
 
@@ -103,4 +89,10 @@
     }
 
 
+}
+
+
+
+.a {
+    fill: white;
 }

@@ -3,10 +3,7 @@ import Beer from '../beer';
 import Filters from '../filters';
 import * as styles from "./beers.module.css";
  
- 
-// const urlBase = `https://api.punkapi.com/v2/beers?page=${page}`;
 const urlBase = `https://api.punkapi.com/v2/beers?page=`;
-
 
 const Beers = () => {
 

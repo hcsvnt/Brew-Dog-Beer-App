@@ -221,25 +221,6 @@ const StrongIBUSVG = () => {
   )
 }
 
-// const SVG = () => {
-//     return (
-
-//         <div>
-//           <WeakABVSVG />
-//           <MediumABVSVG />
-//           <StrongABVSVG />
-
-//           <WeakIBUSVG />
-//           <MediumIBUSVG />
-//           <StrongIBUSVG />
-//         </div>
-
-
-//     )
-// }
-                 
-// export default SVG;
-
 export {
   WeakABVSVG,
   MediumABVSVG,
@@ -247,5 +228,4 @@ export {
   WeakIBUSVG,
   MediumIBUSVG,
   StrongIBUSVG,
-
 }

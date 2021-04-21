@@ -30,23 +30,22 @@ const Filters = (props) => {
     isDisabled()
 
     return (
-        <div>
-            <div className={styles.container}>
-                <div className={styles.filter}>
-                    <p className={styles.filter__label} >ABV</p>
-                    <form id="filterABV" className={styles.filter__form} onChange={props.setABV}>
-                        <label>
+        <div className={styles.container}>
+            <div className={styles.filter}>
+                <p className={styles.filter__label} >ABV</p>
+                <form id="filterABV" className={styles.filter__form} onChange={props.setABV}>
+                    <label>
                         <input
                             type="radio"
                             name="filter-abv"
-                            className={styles.filter__all}
+                            className="radioABV"
                             id="abvAll"
                             value="all"
                             defaultChecked
                         />
-                        <span className={styles.filter__all}>all</span>
-                        </label>
-                        <label>
+                        <span className="filter__all">all</span>
+                    </label>
+                    <label>
                         <input
                             type="radio"
                             name="filter-abv"
@@ -55,8 +54,8 @@ const Filters = (props) => {
                             value="weak"
                         />
                         <WeakABVSVG/>
-                        </label>
-                        <label>
+                    </label>
+                    <label>
                         <input
                             type="radio"
                             name="filter-abv"
@@ -65,8 +64,8 @@ const Filters = (props) => {
                             value="medium"
                         />
                         <MediumABVSVG />
-                        </label>
-                        <label>
+                    </label>
+                    <label>
                         <input
                             type="radio"
                             name="filter-abv"
@@ -75,23 +74,24 @@ const Filters = (props) => {
                             value="strong"
                         />
                         <StrongABVSVG />
-                        </label>
-                    </form>
-                </div>
-                <div className={styles.filter}>
-                    <p className={styles.filter__label}>IBU</p>
-                    <form id="filterIBU" className={styles.filter__form} onChange={props.setIBU}>
-                        <label>
+                    </label>
+                </form>
+            </div>
+            <div className={styles.filter}>
+                <p className={styles.filter__label}>IBU</p>
+                <form id="filterIBU" className={styles.filter__form} onChange={props.setIBU}>
+                    <label>
                         <input
                             type="radio"
                             name="filter-ibu"
-                            className={styles.filter__all}
+                            className="radioIBU"
                             id="ibuAll"
                             value="all"
-                            defaultChecked                        />
-                        <span className={styles.filter__all}>all</span>
-                        </label>
-                        <label>
+                            defaultChecked                        
+                        />
+                        <span className="IBU__all">all</span>
+                    </label>
+                    <label>
                         <input
                             type="radio"
                             name="filter-ibu"
@@ -100,18 +100,18 @@ const Filters = (props) => {
                             value="weak"
                         />
                         <WeakIBUSVG />
-                        </label>
-                        <label>
-                        <input
-                            type="radio"
-                            name="filter-ibu"
-                            className="radioIBU"
-                            id="ibuMedium"
-                            value="medium"
-                        />
-                        <MediumIBUSVG />
-                        </label>
-                        <label>
+                    </label>
+                    <label>
+                    <input
+                        type="radio"
+                        name="filter-ibu"
+                        className="radioIBU"
+                        id="ibuMedium"
+                        value="medium"
+                    />
+                    <MediumIBUSVG />
+                    </label>
+                    <label>
                         <input
                             type="radio"
                             name="filter-ibu"
@@ -120,26 +120,26 @@ const Filters = (props) => {
                             value="strong"
                         />
                         <StrongIBUSVG />
-                        </label>
-                    </form>
-                </div>
-                <div className={styles.filter__pages}>
-                    <div className={styles.filter__text}>
+                    </label>
+                </form>
+            </div>
+            <div className={styles.filter__pages}>
+                <div className={styles.filter__text}>
                     <p>Page: <span id="pageNumber">{page}</span></p>
-                    </div>
-                    <div >
-                    <button id="prevPage" className={styles.page__btn} onClick={props.prevPage} 
-                    disabled={prevDisabled}
-                    >
-                        {/* <i class="far fa-caret-square-left"></i> */}
+                </div>
+                <div>
+                    <button id="prevPage" 
+                        className={styles.page__btn} 
+                        onClick={props.prevPage} 
+                        disabled={prevDisabled}>
                         <span>prev</span>
                     </button>
-                    <button id="nextPage" className={styles.page__btn} onClick={props.nextPage} disabled={nextDisabled}>
-                        {/* <i class="far fa-caret-square-right"></i> */}
+                    <button id="nextPage" 
+                        className={styles.page__btn} 
+                        onClick={props.nextPage} 
+                        disabled={nextDisabled}>
                         <span>next</span>
                     </button>
-                    </div>
-
                 </div>
             </div>
         </div>

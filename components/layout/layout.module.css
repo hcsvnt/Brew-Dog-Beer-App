@@ -1,5 +1,4 @@
 
-
 .wrapper {
     width: 100vw;
     display: flex;
@@ -7,10 +6,3 @@
     justify-content: center;
     
 }
-
-
-
-/* Main font Roboto thin, Roboto light italic
-font-family: 'Roboto', sans-serif;
-Secondary font Space G medium
-font-family: 'Space Grotesk', sans-serif;  */
