@@ -42,13 +42,6 @@
     align-items: center;
 }
 
-.filter__all {
-    color: white;
-    /* font-weight: 900; */
-    font-family: var(--ff-second);
-}
-
-
 .filter__text {
     width: fit-content;
     margin: 0.5rem;

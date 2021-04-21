@@ -81,6 +81,10 @@ input + svg {
     color: white;
 }
 
+.filter__all, .IBU__all {
+    font-family: var(--ff-second);
+}
+
 .radioABV:checked + .filter__all {
     color: orange;
 }
