@@ -19,6 +19,7 @@
 @media screen and (max-width: 710px) {
     .beerCard {
         width: 100%;
+        margin-bottom: 2rem;
     }
 }
 
