@@ -1,14 +1,13 @@
 .beerCard {
     max-width: 400px;
     height: 500px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    border-radius: 15px;
-    padding: 20px;
 
     border-radius: 32px;
     background: #f0f0f0;
@@ -17,32 +16,31 @@
 
 }
 
-
 @media screen and (max-width: 710px) {
     .beerCard {
-        
         width: 100%;
     }
 }
 
 .reverse {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     padding: 1.5rem;
     padding-top: 3rem;
-    width: 100%;
-    height: 100%;
     border-radius: 32px;
-    background: white;
-    /* background: #f8f8f8; */
-    overflow: hidden;
-    cursor: pointer;
-    opacity: 0;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
+    overflow: hidden;
+    cursor: pointer;
+    
+    background: #fafafa;
+    opacity: 0;
     transition: opacity 300ms ease-in-out;
 }
 
@@ -52,10 +50,8 @@
                 inset -8px -8px 16px rgba(238, 130, 238, 0.30);
 }
 
-
 .shadow {
     box-shadow: none;
-    
 }
 
 .description {
@@ -64,14 +60,8 @@
 }
 
 .description span {
-  
-    font-family: var(--ff-second);
     display: block;
-}
-
-.reverse h6 {
     font-family: var(--ff-second);
-    margin-bottom: 1rem;
 }
 
 .description p {
@@ -80,34 +70,36 @@
     line-height: 1.4rem;
 }
 
+.reverse h6 {
+    margin-bottom: 1rem;
+    font-family: var(--ff-second);
+}
+
 .beerCard img {
     order: -1;
     height: 300px;
     margin-bottom: 1rem;
     object-fit: contain;
-
-
 }
 
 .beerCard h4 {
-    font-size: 1.5rem;
-    text-align: center;
-    position: relative;
-    z-index: 5;
-    display: inline-block;
     width: 100%;
     margin: 1rem;
-    
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 5;
 }
 
 .beerCard h4::after {
     content: '';
-    background-color: black;
     width: 100%;
     height: 1px;
     position: absolute;
     bottom: -8px;
     left: 0;
+    background-color: black;
     z-index: 0;
 }
 
@@ -116,20 +108,17 @@
 }
 
 .abv, .ibu {
-    font-weight: 600;
+    position: absolute;
+    top: 20px;
     font-style: italic;
+    font-weight: 600;
     z-index: 5;
-    
 }
 
 .abv {
-    position: absolute;
-    top: 20px;
     left: 24px;
 }
 
 .ibu {
-    position: absolute;
-    top: 20px;
     right: 24px;
 }

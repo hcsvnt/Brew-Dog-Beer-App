@@ -41,10 +41,14 @@ h5, h6 {
     font-style: italic;
 }
 
+input {
+    opacity: 0;
+    position: absolute;
+}
+
 svg {
     width: 3rem;
     height: 3rem;
-    fill:#1b1b1b;
     fill: white;
 }
 
@@ -53,18 +57,14 @@ svg {
         width: 2rem;
         height: 2rem;
     }
-
-
 }
 
-/* .a {
+.a {
     fill: white;
-} */
+}
 
-
-input {
-    opacity: 0;
-    position: absolute;
+label {
+    margin: 10px;
 }
 
 input + span,
@@ -73,11 +73,7 @@ input + svg {
     transition: all .3s ease;
 }
 
-.IBU__all {
-    color: white;
-}
-
-.filter__all {
+.filter__all, .IBU__all {
     color: white;
 }
 
@@ -93,30 +89,17 @@ input + svg {
     color: green;
 }
 
-
 .radioABV:hover,
 .radioABV:checked + svg,
 .radioABV:focus + svg {
-    /* fill: var(--orange); */
     fill: orange;
 }
-
 
 .radioIBU:hover,
 .radioIBU:checked + svg,
 .radioIBU:focus + svg {
-    /* fill: var(--green); */
     fill: green;
 }
-
-
-label {
-    margin: 10px;
-}
-
-/* button {
-    transition: 300ms ease;
-} */
 
 button:hover {
     text-shadow:
@@ -126,7 +109,6 @@ button:hover {
         0 0 25px hsl(300, 76%, 80%),
         0 0 50px hsl(300, 76%, 70%);
 }
-
 
 
 /* Main font Roboto thin, Roboto light italic

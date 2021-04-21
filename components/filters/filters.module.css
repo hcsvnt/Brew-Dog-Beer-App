@@ -7,19 +7,17 @@
 
 .filter { 
     width: 350px;
-    display: flex;
-    font-size: 2rem;
-    justify-content: center;
-    align-items: baseline;
-    border-radius: 15px;
     margin: 20px; 
     margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
     border-radius: 16px;
-    background: #f0f0f0;
-    background-color: #dadada;
-    background-color: #cacaca;
+    background-color: #f0f0f0;
     box-shadow:  8px 8px 8px #d8d8d8,
                 -8px -8px 8px #ffffff;
+    
+    font-size: 2rem;
 }
 
 .filter__label {
@@ -35,38 +33,33 @@
     align-items: flex-end;
 }
 
-.filter__pages {
+.pages {
     width: fit-content;
-   
     display: flex;
     align-items: center;
 }
 
-.filter__text {
+.pages__text {
     width: fit-content;
     margin: 0.5rem;
-    font-size: 1.5rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
+
 .page__btn {
-    outline: none;
-    background-color: lightgray;
-    border: none;
-    border-radius: 20%;
-    margin: 10px;
+    margin: 0 10px 0 10px;
     padding: 1rem;
-    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 16px;
+    box-shadow:  8px 8px 8px #d8d8d8,
+                 -8px -8px 8px #ffffff;
+    
     font-family: var(--ff-second);
     font-size: 1.5rem;
-
-    border-radius: 16px;
-    background: #f0f0f0;
-    box-shadow:  8px 8px 8px #d8d8d8,
-                -8px -8px 8px #ffffff;
-
     transition:  300ms ease;
-
 }
 
 @media screen and (max-width: 400px) {
@@ -75,20 +68,12 @@
         font-size: 1.5rem;
     }
 
-    .filter__all {
-        font-size: 1.5rem;
-    }
-
-    .filter__text {
+    .pages__text {
         font-size: 1rem;
         width: auto;
     }
 
-
-}
-
-
-
-.a {
-    fill: white;
+    .page__btn {
+        padding: 0.75rem;
+    }
 }

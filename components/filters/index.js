@@ -131,8 +131,8 @@ const Filters = (props) => {
                     </label>
                 </form>
             </div>
-            <div className={styles.filter__pages}>
-                <div className={styles.filter__text}>
+            <div className={styles.pages}>
+                <div className={styles.pages__text}>
                     <p>Page: <span id="pageNumber">{page}</span></p>
                 </div>
                 <div>
