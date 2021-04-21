@@ -41,6 +41,7 @@ const Filters = (props) => {
                             className="radioABV"
                             id="abvAll"
                             value="all"
+                            label="all ABV"
                             defaultChecked
                         />
                         <span className="filter__all">all</span>
@@ -52,6 +53,7 @@ const Filters = (props) => {
                             className="radioABV"
                             id="abvWeak"
                             value="weak"
+                            label="weak ABV"
                         />
                         <WeakABVSVG/>
                     </label>
@@ -62,6 +64,7 @@ const Filters = (props) => {
                             className="radioABV"
                             id="abvMedium"
                             value="medium"
+                            label="medium ABV"
                         />
                         <MediumABVSVG />
                     </label>
@@ -72,6 +75,7 @@ const Filters = (props) => {
                             className="radioABV"
                             id="abvStrong"
                             value="strong"
+                            label="strong ABV"
                         />
                         <StrongABVSVG />
                     </label>
