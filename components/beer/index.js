@@ -24,7 +24,7 @@ const Beer = (props) => {
                     <p><span>first brewed: </span>{first_brewed}</p>
                 </div>
             </div>
-            <img src={image_url ?  image_url : genericBottle} width="200px" height="300px"/>
+            <img src={image_url ?  image_url : genericBottle} alt={`${name} beer bottle`} width="200px" height="300px"/>
         </div>
     )
 }
