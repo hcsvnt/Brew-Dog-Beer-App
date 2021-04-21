@@ -21,7 +21,7 @@ const Beers = () => {
 
     async function getBeers() {
         const perPage = "&per_page=11"
-        const url = urlBase + page + optionsABV  + optionsIBU + perPage;
+        const url = urlBase + page + perPage + optionsABV  + optionsIBU;
         const response = await fetch(url);
         const data = await response.json();
         makeBeerArr(data)
