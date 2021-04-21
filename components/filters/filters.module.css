@@ -17,7 +17,7 @@
     border-radius: 16px;
     background: #f0f0f0;
     background-color: #dadada;
-    background-color: #bebebe;
+    background-color: #cacaca;
     box-shadow:  8px 8px 8px #d8d8d8,
                 -8px -8px 8px #ffffff;
 }
@@ -44,6 +44,7 @@
 
 .filter__all {
     color: white;
+    font-weight: 900;
 }
 
 
